@@ -1,8 +1,3 @@
-# Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'com.dio.santander.bankline-api' is invalid and this project uses 'com.dio.santander.banklineapi' instead.
-
 # Getting Started
 
 ### Reference Documentation
