@@ -1,5 +1,6 @@
 package com.dio.santander.banklineapi.model;
 
+
 import jakarta.persistence.*;
 
 @Entity
