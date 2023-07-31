@@ -19,7 +19,11 @@ public class MovimentacaoController {
 
     @GetMapping
     public List<Movimentacao> findAll() {
-        return repository.findAll();
+        List<Movimentacao> movimentacoes = repository.findAll();
+        for (Movimentacao movimentacao : movimentacoes) {
+            System.out.println("datas:" + movimentacao.getDataHora());
+        }
+        return movimentacoes;
     }
 
     @PostMapping
