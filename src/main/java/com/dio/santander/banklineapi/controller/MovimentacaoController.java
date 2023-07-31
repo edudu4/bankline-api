@@ -19,11 +19,12 @@ public class MovimentacaoController {
 
     @GetMapping
     public List<Movimentacao> findAll() {
-        List<Movimentacao> movimentacoes = repository.findAll();
-        for (Movimentacao movimentacao : movimentacoes) {
-            System.out.println("datas:" + movimentacao.getDataHora());
-        }
-        return movimentacoes;
+        return repository.findAll();
+    }
+
+    @GetMapping("/{idConta}")
+    public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta) {
+        return repository.findByIdConta(idConta);
     }
 
     @PostMapping
